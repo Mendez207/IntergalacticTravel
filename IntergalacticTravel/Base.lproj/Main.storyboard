@@ -16,9 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ixd-Xp-smo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Rc-KiR">
+                                <rect key="frame" x="67" y="132" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0wj-vu-GDG"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="PNH-Rc-KiR" id="xO1-n1-3sk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izS-FQ-lnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -36,11 +45,10 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAo-iN-cQK">
-                                <rect key="frame" x="112" y="98" width="150" height="50"/>
+                                <rect key="frame" x="137" y="113" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.14266214369999999" green="0.14130821099999999" blue="0.188316342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Red Star">
-                                    <color key="titleColor" red="0.83575534330000001" green="0.2123793548" blue="0.25251944549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Red Star" backgroundImage="bigRedStar">
+                                    <color key="titleColor" red="0.14266214369999999" green="0.14130821099999999" blue="0.188316342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="Fuf-x0-AKR" kind="show" id="1Ey-dI-hLm"/>
@@ -82,6 +90,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bigRedStar" width="1235" height="1175"/>
         <image name="galaxy" width="405" height="720"/>
     </resources>
 </document>
