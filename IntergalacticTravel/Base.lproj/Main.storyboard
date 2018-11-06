@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Rc-KiR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="omegalul" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Rc-KiR">
                                 <rect key="frame" x="67" y="132" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -51,7 +51,17 @@
                                     <color key="titleColor" red="0.14266214369999999" green="0.14130821099999999" blue="0.188316342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Fuf-x0-AKR" kind="show" id="1Ey-dI-hLm"/>
+                                    <segue destination="Fuf-x0-AKR" kind="show" identifier="starSegue" id="1Ey-dI-hLm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhI-EJ-QHV">
+                                <rect key="frame" x="137" y="315" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Blue Star" backgroundImage="bigBlueStar">
+                                    <color key="titleColor" red="0.14266214369999999" green="0.14130821099999999" blue="0.188316342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="whenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e3S-X2-dWv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +100,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bigBlueStar" width="500" height="500"/>
         <image name="bigRedStar" width="1235" height="1175"/>
         <image name="galaxy" width="405" height="720"/>
+        <image name="omegalul" width="224" height="224"/>
     </resources>
 </document>
