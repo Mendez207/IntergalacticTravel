@@ -20,8 +20,15 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let buttonThatTriggered = sender as! UIButton
+        let title = buttonThatTriggered.titleLabel?.text
         let nvc = segue.destination as! StarViewController
-        nvc.title = "Cool"
+        nvc.title = title
+        if title == "Red Star" {
+            nvc.isRedDwarf = true
+        } else {
+            nvc.isRedDwarf = false
+        }
         
     }
 

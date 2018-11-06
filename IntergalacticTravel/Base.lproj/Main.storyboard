@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="omegalul" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Rc-KiR">
-                                <rect key="frame" x="67" y="132" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="omegalul" translatesAutoresizingMaskIntoConstraints="NO" id="PNH-Rc-KiR">
+                                <rect key="frame" x="16" y="132" width="343" height="288"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -31,7 +31,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izS-FQ-lnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2073" y="793"/>
+            <point key="canvasLocation" x="2072.8000000000002" y="792.95352323838085"/>
         </scene>
         <!--Intergalactic Travel Inc.-->
         <scene sceneID="tne-QT-ifu">
